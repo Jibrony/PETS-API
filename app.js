@@ -5,8 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var adopciones = require('./adopciones');
+var incidencias = require('./incidencias');
 var mascotas = require('./mascotas');
-var reload = require('reload');
+var reportes = require('./reportes');
+var token = require('./token');
+var usuarios = require('./usuarios');
+var vacunas = require('./vacunas');
 
 var app = express();
 // Iniciar el servidor Express
@@ -21,16 +26,35 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Configurar la ruta para /mascotas
+
+// Configurar las rutas en json
+
+app.get('/adopciones', (req, res) => {
+  res.json(adopciones);
+});
+
+app.get('/incidencias', (req, res) => {
+  res.json(incidencias);
+});
+
 app.get('/mascotas', (req, res) => {
-  // Enviar los datos de las mascotas como respuesta JSON
   res.json(mascotas);
 });
 
-// Configurar la ruta para /usuarios
-app.get('/user', (req, res) => {
-  // Enviar los datos de los usuarios como respuesta JSON
+app.get('/reportes', (req, res) => {
+  res.json(reportes);
+});
+
+app.get('/token', (req, res) => {
+  res.json(token);
+});
+
+app.get('/usuarios', (req, res) => {
   res.json(usuarios);
+});
+
+app.get('/vacunas', (req, res) => {
+  res.json(vacunas);
 });
 
 // Configurar las rutas
