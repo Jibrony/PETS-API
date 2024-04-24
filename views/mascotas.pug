@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title Lista de Mascotas
+  body
+    h1 Lista de Mascotas
+    ul
+      each mascota in mascotas
+        li #{mascota.nombre_mascota}: #{mascota.tipo_mascota}, #{mascota.edad} años, #{mascota.raza}
