@@ -7,6 +7,6 @@ para administrar reportes relacionados con el maltrato animal, pérdidas y adopc
 
 ## Authors
 
-- [Jesús Alberto Carballo Caballero]([https://github.com/AlbertoCarballo))
-- [Andrey Julian Gutierrez Arce]([https://www.github.com/octokatherine](https://github.com/Jibrony))
-- [Zulidany Ignacio Sánchez]([https://www.github.com/octokatherine](https://github.com/Jibrony))
+- [Jesús Alberto Carballo Caballero](https://github.com/AlbertoCarballo)
+- [Andrey Julian Gutierrez Arce](https://github.com/Jibrony)
+- [Zulidany Ignacio Sánchez](https://github.com/Jibrony)
